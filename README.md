@@ -291,3 +291,20 @@ Afficher la liste des dépôts configurés :
 # dnf repolist
 ```
 
+
+## Installer KDE
+
+Dans un premier temps, installer le paquet `ffmpeg` en provenance de RPMFusion.
+Ce paquet est une dépendance de KDE sous le capot, et de cette manière on est
+sûr de gérer correctement tous les formats audio et vidéo.
+
+``` 
+# dnf install -y ffmpeg 
+``` 
+
+Partant de là, on peut installer le groupe de paquets pour KDE :
+
+``` 
+# dnf group install "KDE (K Desktop Environment)"
+``` 
+
