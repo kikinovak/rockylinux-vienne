@@ -450,3 +450,21 @@ de fonds d'écran :
 - KeePassXC : `keepassxc`
 
 
+## AnyDesk
+
+Éditer un fichier `/etc/yum.repos.d/anydesk.repo` :
+
+```
+[anydesk]
+name=AnyDesk
+enabled=1
+baseurl=http://rpm.anydesk.com/rhel/$basearch/
+gpgcheck=1
+```
+
+Installer AnyDesk :
+
+```
+# dnf install -y anydesk
+```
+
