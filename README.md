@@ -172,20 +172,20 @@ Installer le groupe :
 Installer le fichier `.bashrc` pour `root` .
 
 ```
-# cp -v bash/bashrc-root /root/.bashrc
+# cp -vf bash/bashrc-root /root/.bashrc
 ```
 
 Installer le fichier `.bashrc` pour l'utilisateur initial (`microlinux` dans
 l'exemple) :
 
 ```
-# cp -v bash/bashrc-user /home/microlinux/.bashrc
+# cp -vf bash/bashrc-user /home/microlinux/.bashrc
 # chown microlinux:microlinux /home/microlinux/.bashrc
 ```
 
 Installer le fichier `.bashrc` pour les futurs utilisateurs :
 
 ```
-# cp -v bash/bashrc-user /etc/skel/.bashrc
+# cp -vf bash/bashrc-user /etc/skel/.bashrc
 ```
 
