@@ -211,3 +211,26 @@ Installer le fichier `.vimrc` pour les futurs utilisateurs :
 # cp -vf vim/vimrc /etc/skel/.vimrc
 ```
 
+## Configurer le dépôt de paquets EPEL
+
+Le dépôt de paquets tiers EPEL (*Extra Packages for Enterprise Linux*) fournit
+un grand nombre de paquets logiciels qui ne sont pas officiellement inclus dans
+RHEL et ses clones.
+
+Activer le dépôt EPEL :
+
+```
+# dnf install -y epel-release
+```
+
+Ce dépôt nécessite l'activation du dépôt CRB (*Code Ready Builder*) :
+
+```
+# /usr/bin/crb enable
+```
+
+Afficher la liste des dépôts configurés :
+
+```
+# dnf repolist
+```
