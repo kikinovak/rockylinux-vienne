@@ -308,6 +308,12 @@ Partant de là, on peut installer le groupe de paquets pour KDE :
 # dnf group install "KDE (K Desktop Environment)"
 ``` 
 
+Démarrer en mode graphique par défaut :
+
+```
+# systemctl set-default graphical.target
+```
+
 ## Franciser le système
 
 Il se peut que le système n'utilise pas la bonne locale :
