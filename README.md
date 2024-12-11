@@ -112,3 +112,35 @@ Exemple avec UEFI/GPT (`gdisk`) :
 
 - Lancez l'installation.
 
+
+## Mise à jour
+
+Au terme de l'installation, connectez-vous en tant que `root` et effectuez la
+mise à jour initiale :
+
+```
+# dnf update -y
+```
+
+Redémarrez :
+
+```
+# reboot
+```
+
+## Documentation
+
+Installez Git :
+
+```
+# dnf install -y git
+```
+
+Récupérez les fichiers de cet atelier pratique dans `/root` :
+
+```
+# cd
+# git clone https://github.com/kikinovak/rockylinux-vienne
+# cd rockylinux-vienne
+```
+
