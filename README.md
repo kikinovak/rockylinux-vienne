@@ -381,4 +381,19 @@ de fonds d'écran :
 # dnf search wallpaper
 ```
 
+## Applications Internet
+
+- Mozilla Firefox : `firefox`
+
+- Google Chrome : `google-chrome-stable`
+
+- Mozilla Thunderbird : `thunderbird`
+
+- Filezilla : `filezilla`
+
+- Client BitTorrent : `transmission`
+
+- Client IRC : `hexchat`
+
+- Client VNC : `krdc`
 
