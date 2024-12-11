@@ -291,6 +291,32 @@ Afficher la liste des dépôts configurés :
 # dnf repolist
 ```
 
+## Configurer le dépôt de paquets Google Chrome
+
+Éditer un fichier `/etc/yum.repos.d/google-chrome.repo` comme ceci :
+
+```
+[chrome]
+name=Chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+enabled=1
+priority=10
+gpgcheck=1
+gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+```
+
+Si tout se passe bien, une recherche sur `chrome` doit afficher quelque chose
+comme ceci :
+
+```
+# dnf search chrome
+...
+google-chrome-beta.x86_64 : Google Chrome (beta)
+google-chrome-canary.x86_64 : Google Chrome (canary)
+google-chrome-stable.x86_64 : Google Chrome
+google-chrome-unstable.x86_64 : Google Chrome (unstable)
+```
+
 
 ## Installer KDE
 
