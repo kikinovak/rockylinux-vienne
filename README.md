@@ -79,3 +79,36 @@ Exemple avec UEFI/GPT (`gdisk`) :
   /dev/sda4  10692608 117229567 106536960 50.8G Linux filesystem
 ```
 
+> Idéalement, créez une partition `swap` égale à la quantité de RAM disponible
+> sur votre machine. Utilisez la commande `free -m` pour en savoir plus.
+
+
+## Installation
+
+- Démarrez sur le support d'installation.
+
+- Sélectionnez la langue et le clavier.
+
+- Optez pour le partitionnement manuel et formatez les partitions que vous
+  venez de faire. Pour les étiquettes (*labels*) vous pouvez choisir `EFI`,
+  `boot`, `swap` et `root`.
+
+- Activez le réseau et vérifiez si vous obtenez bien une adresse IP. 
+
+- Choisissez un nom d'hôte en remplacement de `localhost.localdomain`.
+
+- Configurez le fuseau horaire.
+
+- Désactivez Kdump (mécanisme de capture de plantage du noyau).
+
+- Dans la sélection des paquets, optez pour **Installation minimale**.
+
+- Définissez le mot de passe `root`.
+
+- Créez un utilisateur normal, par exemple `microlinux`.
+
+- Cochez la case **Faire de cet utilisateur un administrateur**. L’utilisateur
+  sera ajouté au groupe `wheel` et pourra se servir de la commande `sudo`.
+
+- Lancez l'installation.
+
