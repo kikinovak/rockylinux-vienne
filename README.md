@@ -150,3 +150,20 @@ Récupérez les fichiers de cet atelier pratique dans `/root` :
 # cd rockylinux-vienne
 ```
 
+## Outils de base
+
+Le groupe `Base` contient une panoplie d'outils en ligne de commande
+raisonnablement complète.
+
+Afficher le groupe :
+
+```
+# dnf group list hidden | grep -i base
+```
+
+Installer le groupe :
+
+```
+# dnf group install Base
+```
+
