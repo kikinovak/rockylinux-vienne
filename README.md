@@ -408,3 +408,16 @@ de fonds d'écran :
 
   * `libreoffice-help-fr`
 
+
+## Applications Graphisme
+
+- Digikam : `digikam`
+
+- GIMP : `gimp`
+
+- Inkscape : `inkscape`
+
+- Scribus : `scribus`
+
+- Simple Scan : `simple-scan`
+
