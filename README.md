@@ -128,7 +128,7 @@ Redémarrez :
 # reboot
 ```
 
-## Documentation
+## Fichiers et documentation
 
 Installez Git :
 
