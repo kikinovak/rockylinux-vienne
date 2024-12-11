@@ -421,3 +421,23 @@ de fonds d'écran :
 
 - Simple Scan : `simple-scan`
 
+
+## Applications Multimedia
+
+- Audacious : 
+
+  * `audacious`
+
+  * `audacious-plugins-freeworld`
+
+- Audacity : `audacity`
+
+- VLC : `vlc`
+
+- MPlayer : `mplayer`
+
+- DVDCSS : `libdvdcss`
+
+- Openshot : `openshot`
+
+- Kdenlive : `kdenlive`
