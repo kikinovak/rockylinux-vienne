@@ -234,3 +234,22 @@ Afficher la liste des dépôts configurés :
 ```
 # dnf repolist
 ```
+
+
+## Configurer le dépôt de paquets ELRepo
+
+Le dépôt de paquets tiers ELRepo (*Enterprise Linux Repository*) fournit
+surtout des kernels plus récents et toute une série de pilotes (ou *drivers*)
+pour RHEL et ses clones.
+
+Activer le dépôt ELRepo :
+
+```
+# dnf install -y elrepo-release
+```
+
+Afficher la liste des dépôts configurés :
+
+```
+# dnf repolist
+```
