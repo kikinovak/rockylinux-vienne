@@ -50,6 +50,12 @@ options `x` et `z`.
 
 ## Partitionnement
 
+Identifiez le disque à partitionner :
+
+```
+# lsblk
+```
+
 Exemple avec BIOS/MBR (`fdisk`) :
 
 ```
