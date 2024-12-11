@@ -308,3 +308,31 @@ Partant de là, on peut installer le groupe de paquets pour KDE :
 # dnf group install "KDE (K Desktop Environment)"
 ``` 
 
+## Franciser le système
+
+Il se peut que le système n'utilise pas la bonne locale :
+
+```
+# localectl status
+System Locale: LANG=C.UTF-8
+    VC Keymap: ch-fr
+   X11 Layout: ch
+  X11 Variant: fr
+```
+
+Dans ce cas, on peut définir la langue française par défaut pour le système :
+
+```
+# localectl set-locale LANG=fr_FR.UTF-8
+```
+
+Vérifier si tout s'est bien passé :
+
+```
+# localectl status
+System Locale: LANG=fr_FR.UTF-8
+    VC Keymap: ch-fr
+   X11 Layout: ch
+  X11 Variant: fr
+```
+
