@@ -441,3 +441,12 @@ de fonds d'écran :
 - Openshot : `openshot`
 
 - Kdenlive : `kdenlive`
+
+
+## Applications Utilitaires
+
+- Ark : `ark`
+
+- KeePassXC : `keepassxc`
+
+
