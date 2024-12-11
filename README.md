@@ -342,3 +342,17 @@ System Locale: LANG=fr_FR.UTF-8
   X11 Variant: fr
 ```
 
+## Configuration initiale de KDE
+
+Dans les Paramètres de KDE, ouvrir la section **Gestion de l'énergie** et
+désactiver tout ce qui ressemble à de la mise en veille.
+
+Faire une recherche sur `background` et `wallpaper` pour trouver une collection
+de fonds d'écran :
+
+```
+# dnf search background
+# dnf search wallpaper
+```
+
+
