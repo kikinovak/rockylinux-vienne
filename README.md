@@ -460,7 +460,7 @@ name=AnyDesk
 enabled=1
 baseurl=http://rpm.anydesk.com/rhel/$basearch/
 gpgcheck=1
-https://keys.anydesk.com/repos/RPM-GPG-KEY
+gpgkey=https://keys.anydesk.com/repos/RPM-GPG-KEY
 ```
 
 Installer AnyDesk :
