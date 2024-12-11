@@ -253,3 +253,41 @@ Afficher la liste des dépôts configurés :
 ```
 # dnf repolist
 ```
+
+## Configurer les dépôts de paquets RPMFusion
+
+Les quatre dépôts RPMFusion fournissent des paquets potentiellement
+problématiques en termes de licence (multimédia, paquets propriétaires, etc.)
+
+Activer le dépôt RPMFusion Free : 
+
+```
+# dnf install --nogpgcheck \
+  https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-9-1.noarch.rpm
+```
+
+Activer le dépôt RPMFusion Nonfree : 
+
+```
+# dnf install --nogpgcheck \
+  https://mirrors.rpmfusion.org/free/el/rpmfusion-nonfree-release-9-1.noarch.rpm
+```
+
+Activer le dépôt RPMFusion Free Tainted :
+
+```
+# dnf install -y rpmfusion-free-release-tainted
+```
+
+Activer le dépôt RPMFusion Nonfree Tainted:
+
+```
+# dnf install -y rpmfusion-nonfree-release-tainted
+```
+
+Afficher la liste des dépôts configurés :
+
+```
+# dnf repolist
+```
+
