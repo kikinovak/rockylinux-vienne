@@ -189,3 +189,25 @@ Installer le fichier `.bashrc` pour les futurs utilisateurs :
 # cp -vf bash/bashrc-user /etc/skel/.bashrc
 ```
 
+## Personnaliser l'éditeur Vim
+
+Installer le fichier `.vimrc` pour `root` .
+
+```
+# cp -vf vim/vimrc /root/.vimrc
+```
+
+Installer le fichier `.vimrc` pour l'utilisateur initial (`microlinux` dans
+l'exemple) :
+
+```
+# cp -vf vim/vimrc /home/microlinux/.vimrc
+# chown microlinux:microlinux /home/microlinux/.vimrc
+```
+
+Installer le fichier `.vimrc` pour les futurs utilisateurs :
+
+```
+# cp -vf vim/vimrc /etc/skel/.vimrc
+```
+
