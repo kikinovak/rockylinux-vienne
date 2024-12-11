@@ -397,3 +397,14 @@ de fonds d'écran :
 
 - Client VNC : `krdc`
 
+
+## Applications Bureautique
+
+- LibreOffice :
+
+  * `libreoffice`
+
+  * `libreoffice-langpack-fr`
+
+  * `libreoffice-help-fr`
+
