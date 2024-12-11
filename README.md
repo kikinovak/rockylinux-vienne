@@ -263,14 +263,14 @@ Activer le dépôt RPMFusion Free :
 
 ```
 # dnf install --nogpgcheck \
-  https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-9-1.noarch.rpm
+  https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-9.noarch.rpm
 ```
 
 Activer le dépôt RPMFusion Nonfree : 
 
 ```
 # dnf install --nogpgcheck \
-  https://mirrors.rpmfusion.org/free/el/rpmfusion-nonfree-release-9-1.noarch.rpm
+  https://mirrors.rpmfusion.org/free/el/rpmfusion-nonfree-release-9.noarch.rpm
 ```
 
 Activer le dépôt RPMFusion Free Tainted :
