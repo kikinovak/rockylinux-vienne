@@ -1,6 +1,9 @@
 # Formation Linux Vienne Condrieu
 
-  * [Rocky Linux 9 "aux petits oignons"][1] (décembre 2024)
+  * [Culture générale&nbsp;: Unix, Linux & Open Source][1]
 
-[1]: docs/rockylinux-9-kde.md
+  * [Rocky Linux 9 "aux petits oignons"][2] (décembre 2024)
+
+[1]: https://formations.microlinux.fr/introduction/a-propos/
+[2]: docs/rockylinux-9-kde.md
 
