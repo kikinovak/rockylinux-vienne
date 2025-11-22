@@ -4,7 +4,7 @@
     Linux, logiciel libre, Open Source, distributions, licences, etc.
 
   * [Rocky Linux 9 *aux petits oignons*][2]&nbsp;: le poste de travail
-    confectionné pas à pas lors de la formation en décembre 2024
+    confectionné pas à pas lors de la formation en décembre 2024.
 
   * [Avant de mettre la main à la pâte][3]&nbsp;: AlmaLinux vs. Rocky Linux,
     téléchargement, confection du support d'installation, considérations
@@ -13,8 +13,12 @@
   * [Linux installé par une poule][4]&nbsp;: Installation simple et rapide d'un
     poste de travail AlmaLinux 9 avec le bureau KDE.
 
+  * [Configuration initiale][5]&nbsp;: Configuration sommaire du poste de
+    travail fraîchement installé.
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
 [4]: https://formations.microlinux.fr/linux-rhel9/poule/
+[5]: https://formations.microlinux.fr/linux-rhel9/configuration/
 
