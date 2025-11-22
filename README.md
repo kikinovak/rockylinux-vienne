@@ -19,10 +19,15 @@
   * [Serveur dédié Rocky Linux chez Scaleway][6]: Installation d'un serveur
     dédié Rocky Linux 8 sur une Dedibox Start SSD chez Scaleway.
 
+  * [Authentification par clé SSH][7]: Générer une paire de clés
+    cryptographiques et mettre en place une connexion par clé sur un serveur
+    distant.
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
 [4]: https://formations.microlinux.fr/linux-rhel9/poule/
 [5]: https://formations.microlinux.fr/linux-rhel9/configuration/
 [6]: https://blog.microlinux.fr/dedibox-rocky-linux-8/
+[7]: https://blog.microlinux.fr/cle-ssh/
 
