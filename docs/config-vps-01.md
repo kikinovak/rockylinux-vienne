@@ -148,3 +148,23 @@ Prendre en compte les modifications :
 $ sudo systemctl reload sshd
 ```
 
+Activer le compte `root` :
+
+```console
+$ sudo passwd root
+Changing password for user root.
+New password: ************
+Retype new password: ************
+passwd: all authentication tokens updated successfully.
+```
+
+Changer d'identité et devenir `root` :
+
+```console
+$ su -
+```
+
+> Ne pas oublier le `-` qui signifie que l'on devient `root` avec toutes les
+> variables d'environnement de ce compte.
+
+
