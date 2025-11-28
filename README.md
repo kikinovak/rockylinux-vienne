@@ -16,15 +16,15 @@
   * [Configuration initiale][5]&nbsp;: Configuration sommaire du poste de
     travail fraîchement installé.
 
-  * [Serveur dédié Rocky Linux chez Scaleway][6]: Installation d'un serveur
-    dédié Rocky Linux 8 sur une Dedibox Start SSD chez Scaleway.
+  * [Serveur dédié Rocky Linux chez Scaleway][6]&nbsp;: Installation d'un
+    serveur dédié Rocky Linux 8 sur une Dedibox Start SSD chez Scaleway.
 
-  * [Authentification par clé SSH][7]: Générer une paire de clés
+  * [Authentification par clé SSH][7]&nbsp;: Générer une paire de clés
     cryptographiques et mettre en place une connexion par clé sur un serveur
     distant.
 
-  * [Configuration initiale du VPS][8]: Configuration post-installation du VPS
-    fourni par OVH
+  * [Configuration initiale du VPS][8]&nbsp;: Configuration post-installation
+    du VPS fourni par OVH
 
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
