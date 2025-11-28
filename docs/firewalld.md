@@ -43,7 +43,7 @@ $ nmcli con show
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ens3         61c74dca-d53f-4784-bbe4-9c898cdb0563  ethernet  --
-[microlinux@c3-4-rbx-a:~] $ firewall-cmd --get-active-zones
+$ firewall-cmd --get-active-zones
 public
   interfaces: eth0
 ```
