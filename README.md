@@ -26,6 +26,8 @@
   * [Configuration initiale du VPS][8]&nbsp;: Configuration post-installation
     du VPS fourni par OVH
 
+  * [Installer et configurer le pare-feu FirewallD][9]&nbsp;: docs/firewalld.md
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
