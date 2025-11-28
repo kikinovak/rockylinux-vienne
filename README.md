@@ -36,3 +36,4 @@
 [6]: https://blog.microlinux.fr/dedibox-rocky-linux-8/
 [7]: https://blog.microlinux.fr/cle-ssh/
 [8]: docs/config-vps.md
+[9]: docs/firewalld.md
