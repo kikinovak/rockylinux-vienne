@@ -1,5 +1,14 @@
-Configuration initiale du VPS
-=============================
+Configuration initiale du VPS (1)
+=================================
+
+  * État des lieux
+
+  * Création d'un compte
+
+  * Peaufinage du serveur SSH
+
+  * Peaufinage de `sudo`
+
 
 Connexion au VPS :
 
@@ -113,4 +122,29 @@ $ ssh microlinux@51.178.223.37
 > J'ai essayé de configurer la connexion par clé SSH pour le compte `root` mais
 > ça bloque en amont au niveau de OVH.
 
+Si l'on ne veut pas avoir à retaper le mot de passe pour `sudo` toutes les
+cinq minutes, on peut créer un fichier `/etc/sudoers.d/persistent_password` et
+l'éditer comme ceci :
+
+```conf
+# Timeout
+Defaults timestamp_timeout=-1
+```
+
+Si l'on ne veut pas hériter des variables d'environnement du poste client, il
+faut commenter toute cette section dans `/etc/ssh/sshd_config` :
+
+```conf
+# Accept locale-related environment variables
+AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+AcceptEnv XMODIFIERS
+```
+
+Prendre en compte les modifications :
+
+```console
+$ sudo systemctl reload sshd
+```
 
