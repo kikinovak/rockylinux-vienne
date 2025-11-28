@@ -23,6 +23,9 @@
     cryptographiques et mettre en place une connexion par clé sur un serveur
     distant.
 
+  * [Configuration initiale du VPS][8]: Configuration post-installation du VPS
+    fourni par OVH
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -30,4 +33,11 @@
 [5]: https://formations.microlinux.fr/linux-rhel9/configuration/
 [6]: https://blog.microlinux.fr/dedibox-rocky-linux-8/
 [7]: https://blog.microlinux.fr/cle-ssh/
+[8]: docs/config-vps.md
+config-vps-01.md
+config-vps-02.md
+config-vps-03.md
+config-vps-04.md
+config-vps.md
+rockylinux-9-kde.md
 
