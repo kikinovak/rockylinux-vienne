@@ -161,3 +161,35 @@ $ cowsay Voili voilou !
                 ||     ||
 ```
 
+Installer quelques paquets qui ne sont pas fournis par le groupe de paquets
+`Base` :
+
+  * `elinks`
+
+  * `git`
+
+  * `glances`
+
+  * `lynis`
+
+  * `lynx`
+
+  * `mailx`
+
+  * `nmap`
+
+Tester quelques commandes :
+
+```console
+$ glances
+...
+$ elinks www.microlinux.fr
+...
+$ lynx www.microlinux.fr
+...
+$ sudo nmap www.microlinux.fr
+...
+$ sudo lynis audit system
+...
+```
+
