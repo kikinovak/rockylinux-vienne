@@ -29,6 +29,9 @@
   * [Pare-feu FirewallD][9]&nbsp;: Installer et configurer un pare-feu simple
     sur le VPS
 
+  * [Protéger SSH avec Fail2ban][10]&nbsp;: Protéger le serveur contre les
+    attaques en force brute
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -38,3 +41,5 @@
 [7]: https://blog.microlinux.fr/cle-ssh/
 [8]: docs/config-vps.md
 [9]: docs/firewalld.md
+[10]: https://blog.microlinux.fr/fail2ban-ssh-rocky-linux-8/
+
