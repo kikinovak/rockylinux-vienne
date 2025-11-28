@@ -34,10 +34,3 @@
 [6]: https://blog.microlinux.fr/dedibox-rocky-linux-8/
 [7]: https://blog.microlinux.fr/cle-ssh/
 [8]: docs/config-vps.md
-config-vps-01.md
-config-vps-02.md
-config-vps-03.md
-config-vps-04.md
-config-vps.md
-rockylinux-9-kde.md
-

@@ -1,13 +1,13 @@
 Configuration initiale du VPS
 =============================
 
-Connexion au VPS :
+Connexion au VPS&nbsp;:
 
 ```console
 $ ssh rocky@51.178.223.37
 ```
 
-Afficher les infos sur le système :
+Afficher les infos sur le système&nbsp;:
 
 ```console
 $ cat /etc/redhat-release
@@ -22,7 +22,7 @@ VERSION="8.10 (Green Obsidian)"
 Utilisateur initial
 -------------------
 
-On vérifie ce que l'utilisateur `rocky` a le droit de faire :
+On vérifie ce que l'utilisateur `rocky` a le droit de faire&nbsp;:
 
 ```console
 $ head -n 1 /etc/shadow
@@ -31,7 +31,7 @@ $ sudo head -n 1 /etc/shadow
 root:!!:19871:0:99999:7:::
 ```
 
-On vérifie avec `visudo` :
+On vérifie avec `visudo`&nbsp;:
 
 ```console
 $ sudo visudo
@@ -55,7 +55,7 @@ passwd: all authentication tokens updated successfully.
 ```
 
 Dans la configuration par défaut, les membres du groupe `wheel` ont le droit
-d'utiliser la commande `sudo` avec un mot de passe :
+d'utiliser la commande `sudo` avec un mot de passe&nbsp;:
 
 ```console
 $ sudo visudo
@@ -64,7 +64,7 @@ $ sudo visudo
 %wheel  ALL=(ALL)       ALL
 ```
 
-On va donc ajouter l'utilisateur initial à ce groupe :
+On va donc ajouter l'utilisateur initial à ce groupe&nbsp;:
 
 ```console
 $ sudo usermod -aG wheel microlinux
@@ -78,7 +78,7 @@ installer un éditeur de texte.
 $ sudo dnf install -y vim-enhanced
 ```
 
-Éditer /etc/ssh/sshd_config :
+Éditer `/etc/ssh/sshd_config`&nbsp;:
 
 ```console
 # To disable tunneled clear text passwords, change to no here!
@@ -87,13 +87,13 @@ PasswordAuthentication yes
 #PasswordAuthentication no
 ```
 
-Prendre en compte la configuration :
+Prendre en compte la configuration&nbsp;:
 
 ```console
 $ sudo systemctl reload sshd
 ```
 
-À présent on peut se reconnecter avec le compte que l'on vient de créer :
+À présent on peut se reconnecter avec le compte que l'on vient de créer&nbsp;:
 
 ```console
 $ exit
@@ -103,7 +103,7 @@ $ ssh microlinux@51.178.223.37
 microlinux@51.178.223.37's password: ************
 ```
 
-Mettre en place l'authentification par clé SSH pour ce compte :
+Mettre en place l'authentification par clé SSH pour ce compte&nbsp;:
 
 ```console
 $ exit
@@ -112,7 +112,7 @@ Connection to 51.178.223.37 closed.
 $ ssh-copy-id -i /home/kikinovak/.ssh/id_rsa.pub microlinux@51.178.223.37
 ```
 
-Vérifier si la connexion par clé SSH fonctionne avec ce compte :
+Vérifier si la connexion par clé SSH fonctionne avec ce compte&nbsp;:
 
 ```console
 $ ssh microlinux@51.178.223.37
@@ -127,7 +127,7 @@ Peaufinage de `sudo`
 
 Si l'on ne veut pas avoir à retaper le mot de passe pour `sudo` toutes les
 cinq minutes, on peut créer un fichier `/etc/sudoers.d/persistent_password` et
-l'éditer comme ceci :
+l'éditer comme ceci&nbsp;:
 
 ```conf
 # Timeout
@@ -139,7 +139,7 @@ SSH et les variables d'environnement
 ------------------------------------
 
 Si l'on ne veut pas hériter des variables d'environnement du poste client, il
-faut commenter toute cette section dans `/etc/ssh/sshd_config` :
+faut commenter toute cette section dans `/etc/ssh/sshd_config`&nbsp;:
 
 ```conf
 # Accept locale-related environment variables
@@ -149,7 +149,7 @@ AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
 AcceptEnv XMODIFIERS
 ```
 
-Prendre en compte les modifications :
+Prendre en compte les modifications&nbsp;:
 
 ```console
 $ sudo systemctl reload sshd
@@ -158,7 +158,7 @@ $ sudo systemctl reload sshd
 Activer le compte `root`
 ------------------------
 
-Définir un mot de passe `root` pour activer le compte :
+Définir un mot de passe `root` pour activer le compte&nbsp;:
 
 ```console
 $ sudo passwd root
@@ -168,7 +168,7 @@ Retype new password: ************
 passwd: all authentication tokens updated successfully.
 ```
 
-Changer d'identité et devenir `root` :
+Changer d'identité et devenir `root`&nbsp;:
 
 ```console
 $ su -
@@ -178,28 +178,16 @@ $ su -
 > variables d'environnement de ce compte.
 
 
-Configuration initiale du VPS (2)
-=================================
-
-  * Mise à jour initiale
-
-  * État des lieux de l'installation
-
-  * Dépôts de paquets officiels et tiers
-
-  * Ajout du dépôt EPEL
-
-
 Mise à jour initiale
 --------------------
 
-Lancer la mise à jour initiale :
+Lancer la mise à jour initiale&nbsp;:
 
 ```console
 $ sudo dnf update
 ```
 
-Si le noyau a été mis à jour :
+Si le noyau a été mis à jour&nbsp;:
 
 ```console
 $ sudo reboot && exit
@@ -211,7 +199,7 @@ $ sudo reboot && exit
 Dépôts et paquets - état des lieux
 ----------------------------------
 
-Afficher les dépôts de paquets configurés :
+Afficher les dépôts de paquets configurés&nbsp;:
 
 ```console
 $ dnf repolist
@@ -221,7 +209,7 @@ baseos                  Rocky Linux 8 - BaseOS
 extras                  Rocky Linux 8 - Extras
 ```
 
-État des lieux sur ce qui est installé :
+État des lieux sur ce qui est installé&nbsp;:
 
 ```console
 $ rpm -qa | wc -l
@@ -247,20 +235,21 @@ Available Groups:
 Installer une panoplie d'outils
 -------------------------------
 
-Installer le groupe de paquets `Base` :
+Installer le groupe de paquets `Base`&nbsp;:
 
 ```console
 $ sudo dnf group install Base
 ```
 
-Paquets disponibles dans la configuration par défaut :
+Paquets disponibles dans la configuration par défaut&nbsp;:
 
 ```console
 $ dnf list all | wc -l
 7588
 ```
 
-Certains paquets ne sont pas disponibles dans les dépôts de paquets officiels :
+Certains paquets ne sont pas disponibles dans les dépôts de paquets
+officiels&nbsp;:
 
 ```console
 $ dnf search certbot
@@ -269,7 +258,7 @@ $ dnf search cowsay
 No matches found.
 ```
 
-Activer le dépôt EPEL (*Extra Packages for Enterprise Linux*) :
+Activer le dépôt EPEL (*Extra Packages for Enterprise Linux*)&nbsp;:
 
 ```console
 $ sudo dnf install epel-release
@@ -278,7 +267,7 @@ Many EPEL packages require the CodeReady Builder (CRB) repository.
 It is recommended that you run /usr/bin/crb enable to enable the CRB repository.
 ```
 
-Suivre la recommandation et activer le dépôt CRB :
+Suivre la recommandation et activer le dépôt CRB&nbsp;:
 
 ```console
 $ sudo /usr/bin/crb enable
@@ -286,7 +275,7 @@ Enabling CRB repo
 CRB repo is enabled and named: powertools
 ```
 
-Afficher la configuration des dépôts de paquets :
+Afficher la configuration des dépôts de paquets&nbsp;:
 
 ```console
 $ dnf repolist
@@ -298,7 +287,7 @@ extras              Rocky Linux 8 - Extras
 powertools          Rocky Linux 8 - PowerTools
 ```
 
-On a beaucoup plus de choix maintenant :
+On a beaucoup plus de choix maintenant&nbsp;:
 
 ```console
 $ dnf list all | wc -l
@@ -309,7 +298,7 @@ $ dnf search cowsay
 cowsay.noarch : Configurable speaking/thinking cow
 ```
 
-Afficher les infos sur un paquet donné :
+Afficher les infos sur un paquet donné&nbsp;:
 
 ```console
 $ dnf info cowsay
@@ -347,7 +336,7 @@ $ cowsay Voili voilou !
 ```
 
 Installer quelques paquets qui ne sont pas fournis par le groupe de paquets
-`Base` :
+`Base`&nbsp;:
 
   * `elinks`
 
@@ -363,7 +352,7 @@ Installer quelques paquets qui ne sont pas fournis par le groupe de paquets
 
   * `nmap`
 
-Tester quelques commandes :
+Tester quelques commandes&nbsp;:
 
 ```console
 $ glances
@@ -383,7 +372,7 @@ Peaufinage du *shell* Bash
 --------------------------
 
 Pour personnaliser le *shell* de l'utilisateur initial, je peux éditer un
-fichier `~/.bashrc` comme ceci :
+fichier `~/.bashrc` comme ceci&nbsp;:
 
 ```bash
 # ~/.bashrc
@@ -415,21 +404,21 @@ export EDITOR VISUAL
 ```
 
 Pour prendre en compte cette configuration, je peux me déconnecter et me
-reconnecter. Alternativement, je peux faire ceci :
+reconnecter. Alternativement, je peux faire ceci&nbsp;:
 
 ```console
 $ source ~/.bashrc
 ```
 
 On va faire la même chose pour `root` mais avec un jeu de couleurs différent
-pour l'invite de commandes :
+pour l'invite de commandes&nbsp;:
 
 ```console
 $ su -
 Password: ************
 ```
 
-Éditer un fichier `/root/.bashrc` comme ceci :
+Éditer un fichier `/root/.bashrc` comme ceci&nbsp;:
 
 ```bash
 # /root/.bashrc
@@ -464,7 +453,7 @@ VISUAL=$EDITOR
 export EDITOR VISUAL
 ```
 
-Prendre en compte ce fichier :
+Prendre en compte ce fichier&nbsp;:
 
 ```console
 # source .bashrc
@@ -476,7 +465,7 @@ Peaufinage de l'éditeur Vim
 ---------------------------
 
 Pour une utilisation plus agréable de Vim, je crée un fichier `~/.vimrc` pour
-mon utilisateur :
+mon utilisateur&nbsp;:
 
 ```vim
 " ~/.vimrc
@@ -490,7 +479,7 @@ set expandtab
 set modeline modelines=2
 ```
 
-Et je vais faire de même pour `root` :
+Et je vais faire de même pour `root`&nbsp;:
 
 ```console
 $ su -
@@ -508,7 +497,7 @@ futur. :o)
 Plus sérieusement, nous pouvons sereinement le désactiver ici dans la mesure où
 il ne nous sert à rien.
 
-Éditer un fichier `/etc/sysctl.d/ipv6.conf` comme ceci :
+Éditer un fichier `/etc/sysctl.d/ipv6.conf` comme ceci&nbsp;:
 
 ```conf
 # /etc/sysctl.d/ipv6.conf
@@ -518,7 +507,7 @@ net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
 ```
 
-Prendre en compte ces nouveaux paramètres :
+Prendre en compte ces nouveaux paramètres&nbsp;:
 
 ```console
 $ sudo sysctl -p --load /etc/sysctl.d/ipv6.conf
