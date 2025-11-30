@@ -24,14 +24,17 @@
     distant.
 
   * [Configuration initiale du VPS][8]&nbsp;: Configuration post-installation
-    du VPS fourni par OVH
+    du VPS fourni par OVH.
 
   * [Pare-feu FirewallD][9]&nbsp;: Installer et configurer un pare-feu simple
-    sur le VPS
+    sur le VPS.
 
   * [Protéger SSH avec Fail2ban][10]&nbsp;: Protéger le serveur contre les
-    attaques en force brute
+    attaques en force brute.
 
+  * [Postfix minimal][11]&nbsp;: Configurer Postfix pour l'envoi de mails
+    depuis le VPS.
+  
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -42,4 +45,7 @@
 [8]: docs/config-vps.md
 [9]: docs/firewalld.md
 [10]: https://blog.microlinux.fr/fail2ban-ssh-rocky-linux-8/
+[11]: https://blog.microlinux.fr/postfix-minimal-dedibox-rocky-linux-8/
+
+
 
