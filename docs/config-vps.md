@@ -517,3 +517,45 @@ net.ipv6.conf.default.disable_ipv6 = 1
 
 À partir de là, `ip addr` n'affiche plus l'adresse IPv6 de la machine.
 
+
+Configurer le nom d'hôte
+------------------------
+
+Je dispose d'un enregistrement DNS qui pointe vers la machine&nbsp;:
+
+```conf
+srv-test-1.viennagglo.fr  IN  A  51.178.223.37
+```
+
+Je redéfinis le nom d'hôte&nbsp;:
+
+```console
+# hostnamectl set-hostname srv-test-1
+```
+
+J'édite `/etc/hosts` en conséquence&nbsp;:
+
+```conf
+# /etc/hosts
+127.0.0.1       localhost.localdomain  localhost
+51.178.223.37   srv-test-1.viennagglo.fr srv-test-1
+```
+
+Je redémarre pour prendre en compte le changement du nom d'hôte&nbsp;:
+
+```console
+# reboot && exit
+```
+
+Je me reconnecte et je fais un petit test&nbsp;
+
+
+```console
+$ ssh microlinux@srv-test-1.viennagglo.fr
+...
+$ hostname
+srv-test-1
+$ hostname --fqdn
+srv-test-1.viennagglo.fr
+```
+
