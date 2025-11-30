@@ -35,6 +35,8 @@
   * [Postfix minimal][11]&nbsp;: Configurer Postfix pour l'envoi de mails
     depuis le VPS.
   
+  * [DNF Automatic][12]&nbsp;: Configurer les mises à jour automatiques.
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -46,6 +48,7 @@
 [9]: docs/firewalld.md
 [10]: https://blog.microlinux.fr/fail2ban-ssh-rocky-linux-8/
 [11]: https://blog.microlinux.fr/postfix-minimal-dedibox-rocky-linux-8/
+[12]: https://blog.microlinux.fr/dnf-automatic-rocky-linux-8/
 
 
 
