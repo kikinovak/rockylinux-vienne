@@ -40,6 +40,9 @@
   * [Serveur MariaDB][13]&nbsp;: Installer et configurer un serveur de bases de
     données MariaDB.
 
+  * [Bases de données][14]&nbsp;: Créer et manipuler des bases de données avec
+    MariaDB.
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -53,6 +56,5 @@
 [11]: https://blog.microlinux.fr/postfix-minimal-dedibox-rocky-linux-8/
 [12]: https://blog.microlinux.fr/dnf-automatic-rocky-linux-8/
 [13]: https://blog.microlinux.fr/installation-mariadb-rocky-linux-8/
-
-
+[14]: https://blog.microlinux.fr/utiliser-mariadb/
 
