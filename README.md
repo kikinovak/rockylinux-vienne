@@ -43,6 +43,9 @@
   * [Bases de données][14]&nbsp;: Créer et manipuler des bases de données avec
     MariaDB.
 
+  * [Sauvegarde & Restauration MariaDB][15]&nbsp;: Sauvegarder et restaurer une
+    base de données MariaDB
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -57,4 +60,5 @@
 [12]: https://blog.microlinux.fr/dnf-automatic-rocky-linux-8/
 [13]: https://blog.microlinux.fr/installation-mariadb-rocky-linux-8/
 [14]: https://blog.microlinux.fr/utiliser-mariadb/
+[15]: https://blog.microlinux.fr/sauvegarder-restaurer-mariadb/
 
