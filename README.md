@@ -46,6 +46,11 @@
   * [Sauvegarde & Restauration MariaDB][15]&nbsp;: Sauvegarder et restaurer une
     base de données MariaDB
 
+  * [Serveur Apache][16]&nbsp;: Serveur web Apache sur le VPS.
+
+  * [Virtual Hosts][17]&nbsp;: Apache et les hôtes virtuels pour héberger
+    plusieurs sites sur le VPS.
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -61,4 +66,7 @@
 [13]: https://blog.microlinux.fr/installation-mariadb-rocky-linux-8/
 [14]: https://blog.microlinux.fr/utiliser-mariadb/
 [15]: https://blog.microlinux.fr/sauvegarder-restaurer-mariadb/
+[16]: https://blog.microlinux.fr/apache-rocky-linux-8/
+[17]: https://blog.microlinux.fr/apache-vhosts-rocky-linux-8/
+
 
