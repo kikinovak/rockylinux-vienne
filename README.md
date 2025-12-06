@@ -55,7 +55,9 @@
 
   * [Certbot][19]&nbsp;: Certificats SSL/TLS gratuits avec Certbot.
 
-  * [Apache et SSL][20]&nbsp;: Hébergement sécurisé avec Apache et SSL
+  * [Apache et SSL][20]&nbsp;: Hébergement sécurisé avec Apache et SSL.
+
+  * [WordPress][21]&nbsp;: Hébergement WordPress sur le VPS.
 
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
@@ -77,4 +79,4 @@
 [18]: https://blog.microlinux.fr/apache-php-rocky-linux-8/
 [19]: https://blog.microlinux.fr/certbot-rocky-linux-8/
 [20]: https://blog.microlinux.fr/apache-ssl-rocky-linux-8/
-
+[21]: https://blog.microlinux.fr/wordpress-rocky-linux-8/
