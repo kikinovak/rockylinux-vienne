@@ -53,6 +53,8 @@
 
   * [PHP][18]&nbsp;: Apache et PHP sur le VPS.
 
+  * [Certbot][19]&nbsp;: Certificats SSL/TLS gratuits avec Certbot.
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -71,5 +73,6 @@
 [16]: https://blog.microlinux.fr/apache-rocky-linux-8/
 [17]: https://blog.microlinux.fr/apache-vhosts-rocky-linux-8/
 [18]: https://blog.microlinux.fr/apache-php-rocky-linux-8/
+[19]: https://blog.microlinux.fr/certbot-rocky-linux-8/
 
 
