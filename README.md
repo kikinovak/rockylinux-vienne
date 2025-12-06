@@ -55,6 +55,8 @@
 
   * [Certbot][19]&nbsp;: Certificats SSL/TLS gratuits avec Certbot.
 
+  * [Apache et SSL][20]&nbsp;: Hébergement sécurisé avec Apache et SSL
+
 [1]: https://formations.microlinux.fr/introduction/a-propos/
 [2]: docs/rockylinux-9-kde.md
 [3]: https://formations.microlinux.fr/linux-rhel9/introduction/
@@ -74,5 +76,5 @@
 [17]: https://blog.microlinux.fr/apache-vhosts-rocky-linux-8/
 [18]: https://blog.microlinux.fr/apache-php-rocky-linux-8/
 [19]: https://blog.microlinux.fr/certbot-rocky-linux-8/
-
+[20]: https://blog.microlinux.fr/apache-ssl-rocky-linux-8/
 
