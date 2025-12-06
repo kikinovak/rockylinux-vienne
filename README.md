@@ -16,7 +16,7 @@
   * [Configuration initiale][5]&nbsp;: Configuration sommaire du poste de
     travail fraîchement installé.
 
-  * [Serveur dédié Rocky Linux chez Scaleway][6]&nbsp;: Installation d'un
+  * [Dedibox chez Scaleway][6]&nbsp;: Installation d'un
     serveur dédié Rocky Linux 8 sur une Dedibox Start SSD chez Scaleway.
 
   * [Authentification par clé SSH][7]&nbsp;: Générer une paire de clés
@@ -43,7 +43,7 @@
   * [Bases de données][14]&nbsp;: Créer et manipuler des bases de données avec
     MariaDB.
 
-  * [Sauvegarde & Restauration MariaDB][15]&nbsp;: Sauvegarder et restaurer une
+  * [Sauvegarde base][15]&nbsp;: Sauvegarder et restaurer une
     base de données MariaDB
 
   * [Serveur Apache][16]&nbsp;: Serveur web Apache sur le VPS.
